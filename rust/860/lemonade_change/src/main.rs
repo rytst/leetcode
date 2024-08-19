@@ -1,3 +1,17 @@
+struct Solution {}
+
+
+fn main() {
+
+    let bills: Vec<i32> = vec![5,5,5,10,20];
+
+    let res = Solution::lemonade_change(bills);
+
+    println!("{}", res)
+}
+
+
+
 struct LemonadeStand {
     fives: i32,
     tens: i32,
