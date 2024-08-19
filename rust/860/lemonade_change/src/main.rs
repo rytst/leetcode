@@ -67,6 +67,7 @@ impl LemonadeStand {
 
 impl Solution {
     pub fn lemonade_change(bills: Vec<i32>) -> bool {
-        LemonadeStand::new().can_provide_change(bills)
+        let mut lemonade = LemonadeStand::new();
+        lemonade.can_provide_change(bills)
     }
 }
