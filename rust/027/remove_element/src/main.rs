@@ -19,10 +19,9 @@ impl Solution {
 
         let mut index = 0;
         while index != nums.len() {
-            if nums[index] != val {
+            if nums[index] == val {
                 nums.remove(index);
                 count += 1;
-                println!("{}", nums.len())
             } else {
                 index += 1;
             }
