@@ -1,9 +1,7 @@
-struct Solution {}
-
-
 fn main() {
 
-    let bills: Vec<i32> = vec![5,5,5,10,20];
+    let bills: Vec<i32> = vec![5, 5, 5, 10, 20];
+    // let bills: Vec<i32> = vec![5, 5, 10, 10, 20];
 
     let res = Solution::lemonade_change(bills);
 
@@ -12,6 +10,7 @@ fn main() {
 
 
 
+// we don't need to track of 20 dollar bills
 struct LemonadeStand {
     fives: i32,
     tens: i32,
@@ -64,6 +63,8 @@ impl LemonadeStand {
 }
 
 
+
+struct Solution {}
 
 impl Solution {
     pub fn lemonade_change(bills: Vec<i32>) -> bool {
